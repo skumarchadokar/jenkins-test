@@ -1,7 +1,9 @@
 pipeline {
-    agent {
-        label 'ubuntu_docker_label'
-    }
+    agent { 
+        node {
+            label 'docker-agent-python'
+            }
+      }
 
     stages {
         stage('Checkout') {
