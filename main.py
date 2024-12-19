@@ -9,7 +9,10 @@ class JenkinsFunc:
     def execute(self):
         print("------------")
         print(self.arguments)
+        print(self.arguments[1])
+        print(type(self.arguments[1]))
         print("------------")
+        return False
 
 
 jf = JenkinsFunc()
