@@ -7,7 +7,9 @@ class JenkinsFunc:
         self.arguments = sys.argv
 
     def execute(self):
+        print("------------")
         print(self.arguments)
+        print("------------")
 
 
 jf = JenkinsFunc()
