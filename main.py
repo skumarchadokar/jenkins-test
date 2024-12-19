@@ -11,7 +11,7 @@ class JenkinsFunc:
         print(self.arguments)
         print(self.arguments[1])
         print(type(self.arguments[1]))
-        print("------------")
+        print("------s------")
         return False
 
 
