@@ -18,4 +18,4 @@ run_script2:
 	fi
 
 # Target to run both scripts
-run_script: run_script1 run_script2
+run_scripts: run_script1 run_script2
