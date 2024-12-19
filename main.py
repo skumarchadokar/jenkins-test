@@ -10,6 +10,8 @@ class JenkinsFunc:
         print("------------")
         print(self.arguments)
         print(self.arguments[1])
+        for i in self.arguments[1]:
+            print(i)
         print(type(self.arguments[1]))
         print("------s------")
         return False
