@@ -13,9 +13,9 @@ pipeline {
                 script {
                     // Find changed files
                     def changedFiles = sh(script: 'git diff --name-only HEAD~1', returnStdout: true).trim().split('\n')
-                    
+                    def changedFilesString = changedFiles.join(',')
                     // Run the make target
-                    sh "make run_scripts files=${changedFiles}"
+                    sh "make run_scripts files=${changedFilesString}"
                     // sh "python3 ./main.py ${changedFiles}"
                     // Loop through each changed file and call the Python script
                     // changedFiles.each { file ->

@@ -7,7 +7,7 @@ class JenkinsFunc:
         self.arguments = sys.argv
 
     def execute(self):
-        print("-----1-------")
+        print("-----1------")
         print(self.arguments)
         print(self.arguments[1])
         for i in self.arguments:
